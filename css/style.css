@@ -115,7 +115,7 @@ a {
   list-style: none;
   position: absolute;
   right: 0;
-  top:50%;
+  top: 50%;
 }
 
 .header-dots button {
@@ -189,6 +189,9 @@ a {
 .advantages {
   padding-top: 64px;
   background-color: #f4f9fd;
+  background-image: url(../images/right-side-3lines.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
 }
 
 .advantages-box {
@@ -218,9 +221,85 @@ a {
 .advantages-box__text {
   padding-left: 40px;
   color: #272727;
-
 }
 
 .advantages-box__text p {
   margin: 10px 0;
+}
+
+.reviews {
+  background-image: url(../images/rev-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  padding: 38px 0 82px;
+}
+
+.reviews__title {
+  color: #fff;
+  max-width: 348px;
+  margin: 0 auto 48px;
+}
+
+.reviews__items {
+  max-width: 940px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews__item {
+  width: 300px;
+  border-radius: 5px;
+  background-color: rgba(255, 225, 255, .2);
+  padding: 35px 20px;
+  color: #fff;
+}
+
+.reviews_item-head {
+  margin-bottom: 13px;
+  display: flex;
+}
+
+.reviews_item-head img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.reviews__item-name {
+  font-weight: 600;
+}
+
+.reviews__item-position {
+  opacity: 0.5;
+}
+
+.reviews__item-text {
+  text-align: center;
+  padding-top: 39px;
+  position: relative;
+}
+
+.reviews__item-text::before {
+  content: "“";
+  font-size: 40px;
+  line-height: 55px;
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+} 
+
+.footer__inner {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height: 61px;
+ color: #272727;
+ padding: 0 40px;
+}
+
+.footer__link a + a{
+  margin-left: 20px;
 }
